@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LanYao-5 个人网站</title>
+    <meta name="description" content="LanYao-5的个人网站 - 技能展示与项目展示">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- 霞鹜文楷字体 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css">
+</head>
+<body>
+    <!-- Hero Section（全屏视差背景） -->
+    <section class="hero" id="hero">
+        <div class="hero__grid"></div>
+        <canvas class="hero__particles" id="particlesCanvas"></canvas>
+        <div class="hero__content">
+            <h1 class="hero__title">
+                <span class="hero__title-cn">蓝耀</span>
+                <span class="hero__title-en">LanYao-5</span>
+            </h1>
+            <p class="hero__subtitle">创新 · 技术 · 设计</p>
+            <div class="hero__scroll-indicator">向下滚动</div>
+        </div>
+    </section>
+
+    <!-- Skill Matrix（SVG线框图表） -->
+    <section class="skills" id="skills">
+        <h2 class="section-title">技能矩阵 <span class="section-title__en">Skill Matrix</span></h2>
+        <div class="skills__container">
+            <div class="skills__chart">
+                <!-- SVG线框图表将通过JavaScript动态生成 -->
+            </div>
+            <div class="skills__list">
+                <div class="skills__category">
+                    <h3 class="skills__category-title">前端开发</h3>
+                    <div class="skills__items">
+                        <div class="skills__item">
+                            <span class="skills__item-name">HTML5/CSS3</span>
+                            <div class="skills__item-bar"><div class="skills__item-progress" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skills__item">
+                            <span class="skills__item-name">JavaScript</span>
+                            <div class="skills__item-bar"><div class="skills__item-progress" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skills__item">
+                            <span class="skills__item-name">响应式设计</span>
+                            <div class="skills__item-bar"><div class="skills__item-progress" style="width: 88%"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills__category">
+                    <h3 class="skills__category-title">后端技术</h3>
+                    <div class="skills__items">
+                        <div class="skills__item">
+                            <span class="skills__item-name">Node.js</span>
+                            <div class="skills__item-bar"><div class="skills__item-progress" style="width: 75%"></div></div>
+                        </div>
+                        <div class="skills__item">
+                            <span class="skills__item-name">数据库设计</span>
+                            <div class="skills__item-bar"><div class="skills__item-progress" style="width: 70%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Gallery（卡片瀑布流） -->
+    <section class="projects" id="projects">
+        <h2 class="section-title">项目展示 <span class="section-title__en">Project Gallery</span></h2>
+        <div class="projects__container">
+            <div class="projects__card">
+                <div class="projects__card-image"></div>
+                <div class="projects__card-content">
+                    <h3 class="projects__card-title">项目名称一</h3>
+                    <p class="projects__card-desc">项目简短描述，介绍主要功能和技术特点。Project brief description with key features.</p>
+                    <div class="projects__card-tags">
+                        <span class="projects__card-tag">HTML5</span>
+                        <span class="projects__card-tag">CSS3</span>
+                        <span class="projects__card-tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+            <div class="projects__card">
+                <div class="projects__card-image"></div>
+                <div class="projects__card-content">
+                    <h3 class="projects__card-title">项目名称二</h3>
+                    <p class="projects__card-desc">项目简短描述，介绍主要功能和技术特点。Project brief description with key features.</p>
+                    <div class="projects__card-tags">
+                        <span class="projects__card-tag">React</span>
+                        <span class="projects__card-tag">Node.js</span>
+                    </div>
+                </div>
+            </div>
+            <div class="projects__card">
+                <div class="projects__card-image"></div>
+                <div class="projects__card-content">
+                    <h3 class="projects__card-title">项目名称三</h3>
+                    <p class="projects__card-desc">项目简短描述，介绍主要功能和技术特点。Project brief description with key features.</p>
+                    <div class="projects__card-tags">
+                        <span class="projects__card-tag">Vue.js</span>
+                        <span class="projects__card-tag">Express</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form（极简3字段设计） -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">联系我 <span class="section-title__en">Contact Me</span></h2>
+        <div class="contact__container">
+            <form class="contact__form">
+                <div class="contact__form-group">
+                    <label for="name" class="contact__label">姓名</label>
+                    <input type="text" id="name" class="contact__input" placeholder="您的姓名">
+                </div>
+                <div class="contact__form-group">
+                    <label for="email" class="contact__label">邮箱</label>
+                    <input type="email" id="email" class="contact__input" placeholder="您的邮箱地址">
+                </div>
+                <div class="contact__form-group">
+                    <label for="message" class="contact__label">留言</label>
+                    <textarea id="message" class="contact__textarea" placeholder="请输入您的留言"></textarea>
+                </div>
+                <button type="submit" class="contact__submit">发送消息</button>
+            </form>
+            <div class="contact__info">
+                <div class="contact__info-item">
+                    <span class="contact__info-icon">📧</span>
+                    <span class="contact__info-text">example@email.com</span>
+                </div>
+                <div class="contact__info-item">
+                    <span class="contact__info-icon">🔗</span>
+                    <span class="contact__info-text">github.com/LanYao-5</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <p class="footer__copyright">© 2023 LanYao-5. All Rights Reserved.</p>
+            <p class="footer__tech">Built with HTML5, CSS3, JavaScript</p>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
